@@ -14,6 +14,10 @@
 		0AEAD2E01AC38EE400A89AA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEAD2DF1AC38EE400A89AA6 /* Images.xcassets */; };
 		0AEAD2E31AC38EE400A89AA6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AEAD2E11AC38EE400A89AA6 /* LaunchScreen.xib */; };
 		0AEAD2EF1AC38EE500A89AA6 /* Argo_NomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEAD2EE1AC38EE500A89AA6 /* Argo_NomTests.m */; };
+		0AEAD2FB1AC3A16900A89AA6 /* ARGSnackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEAD2F91AC3A16900A89AA6 /* ARGSnackTableViewCell.m */; };
+		0AEAD2FC1AC3A16900A89AA6 /* ARGSnackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AEAD2FA1AC3A16900A89AA6 /* ARGSnackTableViewCell.xib */; };
+		0AEAD2FF1AC3A80E00A89AA6 /* ARGSnack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEAD2FE1AC3A80E00A89AA6 /* ARGSnack.m */; };
+		0AEAD3021AC3B2E500A89AA6 /* ARGSnackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEAD3011AC3B2E500A89AA6 /* ARGSnackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		0AEAD2E81AC38EE500A89AA6 /* Argo NomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Argo NomTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AEAD2ED1AC38EE500A89AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AEAD2EE1AC38EE500A89AA6 /* Argo_NomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Argo_NomTests.m; sourceTree = "<group>"; };
+		0AEAD2F81AC3A16900A89AA6 /* ARGSnackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGSnackTableViewCell.h; sourceTree = "<group>"; };
+		0AEAD2F91AC3A16900A89AA6 /* ARGSnackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGSnackTableViewCell.m; sourceTree = "<group>"; };
+		0AEAD2FA1AC3A16900A89AA6 /* ARGSnackTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARGSnackTableViewCell.xib; sourceTree = "<group>"; };
+		0AEAD2FD1AC3A80E00A89AA6 /* ARGSnack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGSnack.h; sourceTree = "<group>"; };
+		0AEAD2FE1AC3A80E00A89AA6 /* ARGSnack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGSnack.m; sourceTree = "<group>"; };
+		0AEAD3001AC3B2E500A89AA6 /* ARGSnackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGSnackViewController.h; sourceTree = "<group>"; };
+		0AEAD3011AC3B2E500A89AA6 /* ARGSnackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGSnackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +99,13 @@
 				0AEAD2DC1AC38EE400A89AA6 /* Main.storyboard */,
 				0AEAD2DF1AC38EE400A89AA6 /* Images.xcassets */,
 				0AEAD2E11AC38EE400A89AA6 /* LaunchScreen.xib */,
+				0AEAD2F81AC3A16900A89AA6 /* ARGSnackTableViewCell.h */,
+				0AEAD2F91AC3A16900A89AA6 /* ARGSnackTableViewCell.m */,
+				0AEAD2FA1AC3A16900A89AA6 /* ARGSnackTableViewCell.xib */,
+				0AEAD2FD1AC3A80E00A89AA6 /* ARGSnack.h */,
+				0AEAD2FE1AC3A80E00A89AA6 /* ARGSnack.m */,
+				0AEAD3001AC3B2E500A89AA6 /* ARGSnackViewController.h */,
+				0AEAD3011AC3B2E500A89AA6 /* ARGSnackViewController.m */,
 				0AEAD2D21AC38EE400A89AA6 /* Supporting Files */,
 			);
 			path = "Argo Nom";
@@ -202,6 +220,7 @@
 				0AEAD2DE1AC38EE400A89AA6 /* Main.storyboard in Resources */,
 				0AEAD2E31AC38EE400A89AA6 /* LaunchScreen.xib in Resources */,
 				0AEAD2E01AC38EE400A89AA6 /* Images.xcassets in Resources */,
+				0AEAD2FC1AC3A16900A89AA6 /* ARGSnackTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEAD2FF1AC3A80E00A89AA6 /* ARGSnack.m in Sources */,
 				0AEAD2DB1AC38EE400A89AA6 /* ViewController.m in Sources */,
 				0AEAD2D81AC38EE400A89AA6 /* AppDelegate.m in Sources */,
 				0AEAD2D51AC38EE400A89AA6 /* main.m in Sources */,
+				0AEAD3021AC3B2E500A89AA6 /* ARGSnackViewController.m in Sources */,
+				0AEAD2FB1AC3A16900A89AA6 /* ARGSnackTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +436,7 @@
 				0AEAD2F41AC38EE500A89AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AEAD2F51AC38EE500A89AA6 /* Build configuration list for PBXNativeTarget "Argo NomTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +445,7 @@
 				0AEAD2F71AC38EE500A89AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
