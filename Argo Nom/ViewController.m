@@ -12,7 +12,7 @@
 #import "ARGSnackTableViewCell.h"
 #import "ARGSnack.h"
 
-@interface ViewController () <UITableViewDataSource>
+@interface ViewController () <UITableViewDataSource, ARGSnackViewControllerDelegate>
 
 @property (nonatomic, strong) NSMutableArray *snackDataSourceArray;
 
@@ -46,6 +46,7 @@
          forCellReuseIdentifier:NSStringFromClass([ARGSnackTableViewCell class])];
     
     // Make table view pretty
+    self.tableView.backgroundColor = [UIColor colorWithWhite:240.0f/255.0f alpha:1];
     self.tableView.layer.cornerRadius = 10;
     self.tableView.layer.borderWidth = 4;
     self.tableView.layer.borderColor = [UIColor colorWithWhite:47.0f/255.0f alpha:1].CGColor;
@@ -78,8 +79,15 @@
 {
     if ([segue.identifier isEqualToString:@"Snack"]) {
         ARGSnackViewController *destinationViewController = segue.destinationViewController;
+        destinationViewController.delegate = self;
         destinationViewController.snack = self.snackDataSourceArray[arc4random_uniform((int)self.snackDataSourceArray.count)];
     }
+}
+
+#pragma mark - ARGSnackViewControllerDelegate
+- (void)didSelectSnack:(ARGSnack *)snack
+{
+    snack.amount--;
 }
 
 @end

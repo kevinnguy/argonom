@@ -10,12 +10,22 @@
 
 #import "ARGSnack.h"
 
+@protocol ARGSnackViewControllerDelegate <NSObject>
+
+- (void)didSelectSnack:(ARGSnack *)snack;
+
+@end
+
 @interface ARGSnackViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *snackImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *stickerImageView;
 @property (weak, nonatomic) IBOutlet UILabel *snackLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *thumbImageView;
+@property (weak, nonatomic) IBOutlet UILabel *amountLabel;
+@property (weak, nonatomic) IBOutlet UIButton *yesButton;
 
 @property (nonatomic, strong) ARGSnack *snack;
+@property (nonatomic, assign) id<ARGSnackViewControllerDelegate> delegate;
 
 @end
